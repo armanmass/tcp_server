@@ -1,7 +1,11 @@
-add_library(HandlersLib INTERFACE)
+add_library(
+    HandlersLib 
+    STATIC
+        EpollHandler.cpp
+)
 
 target_include_directories(
     HandlersLib
-    INTERFACE
-        ${CMAKE_CURRENT_SOURCE_DIR}    
+    PUBLIC
+        ${CMAKE_CURRENT_SOURCE_DIR}
 )

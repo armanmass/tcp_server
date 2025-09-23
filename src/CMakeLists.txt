@@ -6,5 +6,6 @@ add_executable(
 target_link_libraries(
 	RunTCPServer
 	PRIVATE
-		TCPServerLib	
+		TCPServerLib
+		HandlersLib
 )

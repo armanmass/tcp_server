@@ -4,7 +4,8 @@
 
 int main()
 {
-    TCPServer server{8080, std::make_unique<EpollHandler>()};
+    int serverPort{8080};
+    TCPServer server{serverPort, std::make_unique<EpollHandler>()};
     server.run();
     server.stop();
 }
